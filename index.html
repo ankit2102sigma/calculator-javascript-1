@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+   <script>
+    var num1 = parseFloat(prompt("Enter First Number"))
+    var num2 = parseInt(prompt("Enter Second Number"))
+    var operration = prompt("Which operation you need to perform")
+    // console.log(num1);
+    // console.log(num2);
+    // console.log(operration);
+    var ans = 0;
+    var add  = num1+num2;
+    var sub  = num1-num2;
+    var mul  = num1*num2;
+    var div  = num1/num2;
+    switch(operration){
+        case "+" : alert("Answer "+  add)
+        break;
+        case "-" : alert("Answer "+ sub)
+        break;
+        case "*" : alert("Answer "+ mul)
+        break;
+        case "/" : alert("Answer "+ div)
+        break;
+        default : alert("Please select correct operator")
+       }
+
+   </script>
+</body>
+</html>
